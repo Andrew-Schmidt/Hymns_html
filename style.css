@@ -1,0 +1,144 @@
+*
+{
+	margin: 0;
+	background-color: black;
+	width: 100%;
+	text-align: center;
+	color: white;
+	padding: 0;	
+}
+p
+{
+	background-color: darkred;
+	padding-top: 10px;
+	
+}
+h1
+{
+	margin-right: 20%;
+	margin-left: 20%;
+	background-color: darkred;
+	width: 60%;
+	align-content: center;
+	padding-bottom: 20px;
+	padding-top: 5px;
+	color: white;
+}
+input, button
+{
+	border-color: white;
+	background-color: darkred;
+	color: white;
+	height: 50px;
+	border: 2px;
+	margin-top: 2px;
+	align-content: center;
+	width: 100%;
+}
+img
+{
+	width: 20%;
+	background-color: transparent;
+}
+audio::-webkit-media-controls-panel
+{
+	background-color: darkred;
+}
+audio::-webkit-meida-controls-volume-slider
+{
+	background-color: black;
+}
+#summary
+{
+	width: 60%;
+	margin-left:20%
+}
+#mid-wrapper
+{
+	width: 60%;
+	margin-left: 20%;
+	background-color: darkred;
+	justify-content: space-between;
+}
+#summary
+{
+	background-color: darkred;
+}
+.right
+{
+	width: 90%;
+	float: none;
+	height: 40px;
+}
+.left
+{
+	height: 40px;
+	width: 5%;
+	float: left;
+	background-color: darkred;
+	color: white;
+	align-content: center;
+}
+.end
+{
+	width: 5%;
+	background-color: darkred;
+	float: right;
+	height: 40px;
+}	
+#bottom
+{
+	height: 300px;
+	width: 60%;
+	margin-left: 20%;
+	background-color: darkred;
+}
+@media screen and (max-width: 700px)
+{
+	*
+	{
+		margin: 0;
+		border: 0;
+		padding: 0;
+	}
+	body
+	{
+		width:100%;
+	}
+	div
+	{
+		float: left;
+		width: 100%;
+		margin-right: 0;
+		margin-left: 0;
+		text-align: center;
+	}
+	img
+	{
+		width: 40%;
+	}
+	#full-wrapper, #summary, #form, #media, #mid-wrapper, html, audio, h1
+	{
+		margin-right: 0;
+		margin-left: 0;
+		width: 100%;
+	}
+	.right
+	{
+		width:80%
+	}
+	.left
+	{
+		width: 10%;
+	}
+	.end
+	{
+		width: 10%;
+	}
+	#bottom
+	{
+		width: 100%;
+		margin: 0;
+		height: 60px;
+	}
+}
