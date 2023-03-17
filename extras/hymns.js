@@ -37,14 +37,15 @@ hymn1.id = "audio1"
 hymn2.id = "audio2"
 hymn3.id = "audio3"
 hymn4.id = "audio4"
-liturgy1_src =  "extras/Liturgies/revisedPAGE5best.wav"
-liturgy2_src =  "extras/Liturgies/OFFERPG5.wav"
-liturgy3_src =  "extras/Liturgies/2collectbendpg14.wav"
-liturgy4_src =  "extras/Liturgies/OFFERP15.wav"
-liturgy5_src =  "extras/Liturgies/PAGE24thru28.wav"
-liturgy6_src =  "extras/Liturgies/Communion verses no.2Draw nigh.wav"
-liturgy7_src =  "extras/Liturgies/pg.29 Nunc to end.wav"
-liturgy8_src =  "extras/Liturgies/"
+liturgy1_src = "extras/Liturgies/revisedPAGE5best.wav"
+liturgy2_src = "extras/Liturgies/OFFERPG5.wav"
+liturgy3_src = "extras/Liturgies/2collectbendpg14.wav"
+liturgy4_src = "extras/Liturgies/OFFERP15.wav"
+liturgy5_src = "extras/Liturgies/PAGE24thru28.wav"
+liturgy6_src = "extras/Liturgies/Communion verses no.2Draw nigh.wav"
+liturgy7_src = "extras/Liturgies/pg.29 Nunc to end.wav"
+liturgy8_src = "extras/Liturgies/Vesperspg41best2015.wav"
+liturgy9_src = "extras/Liturgies/pg44-45vespers.wav"
 const monthsAmt = ["31", "28", "31", "30", "31", "30", "31", "31", "30", "31", "30", "31"];
 
 function date_Values(a){
@@ -109,6 +110,22 @@ function communion(){
 	liturgy5.setAttribute('src', liturgy7_src);
 	hymn4.setAttribute('src', audio4);
 }
+function midweek(){
+	sum.innerHTML="";
+	sum.appendChild(hymn1);
+	sum.appendChild(liturgy1);
+	sum.appendChild(hymn2)
+	sum.appendChild(hymn3)
+	sum.appendChild(liturgy2)
+	sum.appendChild(hymn4)
+
+	hymn1.setAttribute('src', audio1);
+	liturgy1.setAttribute('src', liturgy8_src);
+	hymn2.setAttribute('src', audio2);
+	hymn3.setAttribute('src', audio3);
+	liturgy2.setAttribute('src', liturgy9_src);
+	hymn4.setAttribute('src', audio4);
+}
 document.querySelector("form").addEventListener("submit", function()
 	{
 		inputValue_1 = document.getElementById("hymn1").value;
@@ -150,11 +167,7 @@ document.querySelector("form").addEventListener("submit", function()
 			}
 		} 
 		else {
-			sum.innerHTML="";
-			console.log("midweek");
-			var p = document.createElement('p');
-			p.innerHTML = 'midweek'
-			sum.appendChild(p);
+			midweek();
 		}
 	}
 );
