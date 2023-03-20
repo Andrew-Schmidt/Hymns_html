@@ -13,6 +13,8 @@ const liturgy6 = new Audio();
 const liturgy7 = new Audio();
 const hymnLabel1 = document.createElement("p");
 hymnLabel1.classList.add("left");
+hymnLabel1.innerHTML = "Hymn: "
+hymnLabel1.innerHTML += inputValue_1
 const hymnLabel2 = document.createElement("p");
 hymnLabel2.classList.add("left");
 hymnLabel2.innerHTML = inputValue_2
@@ -24,16 +26,16 @@ hymnLabel4.classList.add("left");
 hymnLabel4.innerHTML = inputValue_4
 const liturgyLabel1 = document.createElement("p");
 liturgyLabel1.classList.add("left");
-liturgyLabel1.innerHTML = "l1"
+liturgyLabel1.innerHTML = "L 1"
 const liturgyLabel2 = document.createElement("p");
 liturgyLabel2.classList.add("left");
-liturgyLabel2.innerHTML = "l2"
+liturgyLabel2.innerHTML = "L 2"
 const liturgyLabel3 = document.createElement("p");
 liturgyLabel3.classList.add("left");
-liturgyLabel3.innerHTML = "l3"
+liturgyLabel3.innerHTML = "L 3"
 const liturgyLabel4 = document.createElement("p");
 liturgyLabel4.classList.add("left");
-liturgyLabel4.innerHTML = "l4"
+liturgyLabel4.innerHTML = "L 4"
 const liturgyLabel5 = document.createElement("p");
 liturgyLabel5.classList.add("left");
 liturgyLabel5.innerHTML = "l5"
