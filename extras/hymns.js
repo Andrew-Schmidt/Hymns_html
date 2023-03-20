@@ -11,6 +11,35 @@ const liturgy4 = new Audio();
 const liturgy5 = new Audio();
 const liturgy6 = new Audio();
 const liturgy7 = new Audio();
+const hymnLabel1 = document.createElement("p");
+hymnLabel1.classList.add("left");
+const hymnLabel2 = document.createElement("p");
+hymnLabel2.classList.add("left");
+hymnLabel2.innerHTML = inputValue_2
+const hymnLabel3 = document.createElement("p");
+hymnLabel3.classList.add("left");
+hymnLabel3.innerHTML = inputValue_3
+const hymnLabel4 = document.createElement("p");
+hymnLabel4.classList.add("left");
+hymnLabel4.innerHTML = inputValue_4
+const liturgyLabel1 = document.createElement("p");
+liturgyLabel1.classList.add("left");
+liturgyLabel1.innerHTML = "l1"
+const liturgyLabel2 = document.createElement("p");
+liturgyLabel2.classList.add("left");
+liturgyLabel2.innerHTML = "l2"
+const liturgyLabel3 = document.createElement("p");
+liturgyLabel3.classList.add("left");
+liturgyLabel3.innerHTML = "l3"
+const liturgyLabel4 = document.createElement("p");
+liturgyLabel4.classList.add("left");
+liturgyLabel4.innerHTML = "l4"
+const liturgyLabel5 = document.createElement("p");
+liturgyLabel5.classList.add("left");
+liturgyLabel5.innerHTML = "l5"
+const liturgyLabel6 = document.createElement("p");
+liturgyLabel6.classList.add("left");
+liturgyLabel6.innerHTML = "l6"
 hymn1.controls = true;
 hymn2.controls = true;
 hymn3.controls = true;
@@ -72,13 +101,24 @@ function date_Values(a){
 function standard(){
 
 	sum.innerHTML = "";
+	hymnLabel1.innerHTML = inputValue_1
+	hymnLabel2.innerHTML = inputValue_2
+	hymnLabel3.innerHTML = inputValue_3
+	hymnLabel4.innerHTML = inputValue_4
 	sum.appendChild(hymn1);
+	sum.appendChild(hymnLabel1);
 	sum.appendChild(liturgy1);
+	sum.appendChild(liturgyLabel1);
 	sum.appendChild(hymn2);
+	sum.appendChild(hymnLabel2);
 	sum.appendChild(liturgy2);
+	sum.appendChild(liturgyLabel2);
 	sum.appendChild(liturgy3);
+	sum.appendChild(liturgyLabel3);
 	sum.appendChild(hymn3);
+	sum.appendChild(hymnLabel3);
 	sum.appendChild(hymn4);
+	sum.appendChild(hymnLabel4);
 	hymn1.setAttribute('src', audio1);
 	liturgy1.setAttribute('src', liturgy1_src);
 	hymn2.setAttribute('src', audio2);
@@ -90,15 +130,28 @@ function standard(){
 }
 function communion(){
 	sum.innerHTML="";
+	hymnLabel1.innerHTML = inputValue_1
+	hymnLabel2.innerHTML = inputValue_2
+	hymnLabel3.innerHTML = inputValue_3
+	hymnLabel4.innerHTML = inputValue_4
 	sum.appendChild(hymn1);
+	sum.appendChild(hymnLabel1);
 	sum.appendChild(liturgy1);
+	sum.appendChild(liturgyLabel1);
 	sum.appendChild(hymn2);
+	sum.appendChild(hymnLabel2);
 	sum.appendChild(liturgy2);
+	sum.appendChild(liturgyLabel2);
 	sum.appendChild(hymn3);
+	sum.appendChild(hymnLabel3);
 	sum.appendChild(liturgy3);
+	sum.appendChild(liturgyLabel3);
 	sum.appendChild(liturgy4);
+	sum.appendChild(liturgyLabel4);
 	sum.appendChild(liturgy5);
+	sum.appendChild(liturgyLabel5);
 	sum.appendChild(hymn4);
+	sum.appendChild(hymnLabel4);
 
 	hymn1.setAttribute('src', audio1);
 	liturgy1.setAttribute('src', liturgy1_src);
@@ -112,12 +165,22 @@ function communion(){
 }
 function midweek(){
 	sum.innerHTML="";
+	hymnLabel1.innerHTML = inputValue_1
+	hymnLabel2.innerHTML = inputValue_2
+	hymnLabel3.innerHTML = inputValue_3
+	hymnLabel4.innerHTML = inputValue_4
 	sum.appendChild(hymn1);
+	sum.appendChild(hymnLabel1);
 	sum.appendChild(liturgy1);
-	sum.appendChild(hymn2)
-	sum.appendChild(hymn3)
-	sum.appendChild(liturgy2)
-	sum.appendChild(hymn4)
+	sum.appendChild(liturgyLabel1);
+	sum.appendChild(hymn2);
+	sum.appendChild(hymnLabel2);
+	sum.appendChild(hymn3);
+	sum.appendChild(hymnLabel3);
+	sum.appendChild(liturgy2);
+	sum.appendChild(liturgyLabel2);
+	sum.appendChild(hymn4);
+	sum.appendChild(hymnLabel4);
 
 	hymn1.setAttribute('src', audio1);
 	liturgy1.setAttribute('src', liturgy8_src);
