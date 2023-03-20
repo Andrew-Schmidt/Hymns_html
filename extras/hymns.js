@@ -25,22 +25,22 @@ hymnLabel4.classList.add("left");
 hymnLabel4.innerHTML = inputValue_4
 const liturgyLabel1 = document.createElement("p");
 liturgyLabel1.classList.add("left");
-liturgyLabel1.innerHTML = "Lityrgy: 1"
+liturgyLabel1.innerHTML = "Liturgy: 1"
 const liturgyLabel2 = document.createElement("p");
 liturgyLabel2.classList.add("left");
-liturgyLabel2.innerHTML = "Lityrgy: 2"
+liturgyLabel2.innerHTML = "Liturgy: 2"
 const liturgyLabel3 = document.createElement("p");
 liturgyLabel3.classList.add("left");
-liturgyLabel3.innerHTML = "Lityrgy: 3"
+liturgyLabel3.innerHTML = "Liturgy: 3"
 const liturgyLabel4 = document.createElement("p");
 liturgyLabel4.classList.add("left");
-liturgyLabel4.innerHTML = "Lityrgy: 4"
+liturgyLabel4.innerHTML = "Liturgy: 4"
 const liturgyLabel5 = document.createElement("p");
 liturgyLabel5.classList.add("left");
-liturgyLabel5.innerHTML = "Lityrgy: 5"
+liturgyLabel5.innerHTML = "Liturgy: 5"
 const liturgyLabel6 = document.createElement("p");
 liturgyLabel6.classList.add("left");
-liturgyLabel6.innerHTML = "Lityrgy: 6"
+liturgyLabel6.innerHTML = "Liturgy: 6"
 hymn1.controls = true;
 hymn2.controls = true;
 hymn3.controls = true;
