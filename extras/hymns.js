@@ -14,7 +14,6 @@ const liturgy7 = new Audio();
 const hymnLabel1 = document.createElement("p");
 hymnLabel1.classList.add("left");
 hymnLabel1.innerHTML = "Hymn: "
-hymnLabel1.innerHTML += inputValue_1
 const hymnLabel2 = document.createElement("p");
 hymnLabel2.classList.add("left");
 hymnLabel2.innerHTML = inputValue_2
@@ -26,22 +25,22 @@ hymnLabel4.classList.add("left");
 hymnLabel4.innerHTML = inputValue_4
 const liturgyLabel1 = document.createElement("p");
 liturgyLabel1.classList.add("left");
-liturgyLabel1.innerHTML = "L 1"
+liturgyLabel1.innerHTML = "Lityrgy: 1"
 const liturgyLabel2 = document.createElement("p");
 liturgyLabel2.classList.add("left");
-liturgyLabel2.innerHTML = "L 2"
+liturgyLabel2.innerHTML = "Lityrgy: 2"
 const liturgyLabel3 = document.createElement("p");
 liturgyLabel3.classList.add("left");
-liturgyLabel3.innerHTML = "L 3"
+liturgyLabel3.innerHTML = "Lityrgy: 3"
 const liturgyLabel4 = document.createElement("p");
 liturgyLabel4.classList.add("left");
-liturgyLabel4.innerHTML = "L 4"
+liturgyLabel4.innerHTML = "Lityrgy: 4"
 const liturgyLabel5 = document.createElement("p");
 liturgyLabel5.classList.add("left");
-liturgyLabel5.innerHTML = "l5"
+liturgyLabel5.innerHTML = "Lityrgy: 5"
 const liturgyLabel6 = document.createElement("p");
 liturgyLabel6.classList.add("left");
-liturgyLabel6.innerHTML = "l6"
+liturgyLabel6.innerHTML = "Lityrgy: 6"
 hymn1.controls = true;
 hymn2.controls = true;
 hymn3.controls = true;
@@ -103,10 +102,10 @@ function date_Values(a){
 function standard(){
 
 	sum.innerHTML = "";
-	hymnLabel1.innerHTML = inputValue_1
-	hymnLabel2.innerHTML = inputValue_2
-	hymnLabel3.innerHTML = inputValue_3
-	hymnLabel4.innerHTML = inputValue_4
+	hymnLabel1.innerHTML = ("Hymn: " + inputValue_1); 
+	hymnLabel2.innerHTML = ("Hymn: " + inputValue_2);
+	hymnLabel3.innerHTML = ("Hymn: " + inputValue_3);
+	hymnLabel4.innerHTML = ("Hymn: " + inputValue_4);
 	sum.appendChild(hymn1);
 	sum.appendChild(hymnLabel1);
 	sum.appendChild(liturgy1);
@@ -132,10 +131,10 @@ function standard(){
 }
 function communion(){
 	sum.innerHTML="";
-	hymnLabel1.innerHTML = inputValue_1
-	hymnLabel2.innerHTML = inputValue_2
-	hymnLabel3.innerHTML = inputValue_3
-	hymnLabel4.innerHTML = inputValue_4
+	hymnLabel1.innerHTML = ("Hymn: " + inputValue_1); 
+	hymnLabel2.innerHTML = ("Hymn: " + inputValue_2);
+	hymnLabel3.innerHTML = ("Hymn: " + inputValue_3);
+	hymnLabel4.innerHTML = ("Hymn: " + inputValue_4);
 	sum.appendChild(hymn1);
 	sum.appendChild(hymnLabel1);
 	sum.appendChild(liturgy1);
@@ -167,10 +166,10 @@ function communion(){
 }
 function midweek(){
 	sum.innerHTML="";
-	hymnLabel1.innerHTML = inputValue_1
-	hymnLabel2.innerHTML = inputValue_2
-	hymnLabel3.innerHTML = inputValue_3
-	hymnLabel4.innerHTML = inputValue_4
+	hymnLabel1.innerHTML = ("Hymn: " + inputValue_1); 
+	hymnLabel2.innerHTML = ("Hymn: " + inputValue_2);
+	hymnLabel3.innerHTML = ("Hymn: " + inputValue_3);
+	hymnLabel4.innerHTML = ("Hymn: " + inputValue_4);
 	sum.appendChild(hymn1);
 	sum.appendChild(hymnLabel1);
 	sum.appendChild(liturgy1);
