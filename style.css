@@ -64,13 +64,14 @@ audio::-webkit-meida-controls-volume-slider
 {
 	background-color: darkred;
 	padding-top: 5px;
-	
+	width: 60%;
 }
 .right
 {
 	width: 90%;
 	float: none;
 	height: 40px;
+	background-color: darkred;
 }
 .left
 {
@@ -119,6 +120,12 @@ audio::-webkit-meida-controls-volume-slider
 	img
 	{
 		width: 40%;
+	}
+	#summary
+	{
+		width: 100%;
+		float: left;
+		margin-left: 0;
 	}
 	#full-wrapper, #form, #media, #mid-wrapper, html, audio, h1
 	{
