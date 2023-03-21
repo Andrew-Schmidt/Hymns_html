@@ -63,6 +63,8 @@ audio::-webkit-meida-controls-volume-slider
 #summary
 {
 	background-color: darkred;
+	padding-top: 5px;
+	
 }
 .right
 {
@@ -89,7 +91,7 @@ audio::-webkit-meida-controls-volume-slider
 }	
 #bottom
 {
-	height: 300px;
+	height: 50px;
 	width: 60%;
 	margin-left: 20%;
 	background-color: darkred;
