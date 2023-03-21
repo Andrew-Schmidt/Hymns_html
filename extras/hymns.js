@@ -222,6 +222,7 @@ document.querySelector("form").addEventListener("submit", function()
 		comm_cond = monthsAmt[month_int-1];
 		daySub = (comm_cond - dayInt);
 		console.log(daySub);
+		document.getElementById("mid-wrapper").innerHTML = ""
 		if (dow_Out == "Sunday") {
 			if (daySub >= 7) {
 				standard();
