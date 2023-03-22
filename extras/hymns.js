@@ -77,6 +77,7 @@ liturgy7_src = "extras/Liturgies/pg.29 Nunc to end.wav"
 liturgy8_src = "extras/Liturgies/Vesperspg41best2015.wav"
 liturgy9_src = "extras/Liturgies/pg44-45vespers.wav"
 const monthsAmt = ["31", "28", "31", "30", "31", "30", "31", "31", "30", "31", "30", "31"];
+const mid = document.getElementById('mid-wrapper')
 
 function date_Values(a){
 	dow = new Date(a);
@@ -101,25 +102,26 @@ function date_Values(a){
 }
 function standard(){
 
+	mid.innerHTML = "";
 	sum.innerHTML = "";
 	hymnLabel1.innerHTML = ("Hymn: " + inputValue_1); 
 	hymnLabel2.innerHTML = ("Hymn: " + inputValue_2);
 	hymnLabel3.innerHTML = ("Hymn: " + inputValue_3);
 	hymnLabel4.innerHTML = ("Hymn: " + inputValue_4);
-	sum.appendChild(hymn1);
-	sum.appendChild(hymnLabel1);
-	sum.appendChild(liturgy1);
-	sum.appendChild(liturgyLabel1);
-	sum.appendChild(hymn2);
-	sum.appendChild(hymnLabel2);
-	sum.appendChild(liturgy2);
-	sum.appendChild(liturgyLabel2);
-	sum.appendChild(liturgy3);
-	sum.appendChild(liturgyLabel3);
-	sum.appendChild(hymn3);
-	sum.appendChild(hymnLabel3);
-	sum.appendChild(hymn4);
-	sum.appendChild(hymnLabel4);
+	mid.appendChild(hymn1);
+	mid.appendChild(hymnLabel1);
+	mid.appendChild(liturgy1);
+	mid.appendChild(liturgyLabel1);
+	mid.appendChild(hymn2);
+	mid.appendChild(hymnLabel2);
+	mid.appendChild(liturgy2);
+	mid.appendChild(liturgyLabel2);
+	mid.appendChild(liturgy3);
+	mid.appendChild(liturgyLabel3);
+	mid.appendChild(hymn3);
+	mid.appendChild(hymnLabel3);
+	mid.appendChild(hymn4);
+	mid.appendChild(hymnLabel4);
 	hymn1.setAttribute('src', audio1);
 	liturgy1.setAttribute('src', liturgy1_src);
 	hymn2.setAttribute('src', audio2);
@@ -130,29 +132,29 @@ function standard(){
 
 }
 function communion(){
-	sum.innerHTML="";
+	mid.innerHTML="";
 	hymnLabel1.innerHTML = ("Hymn: " + inputValue_1); 
 	hymnLabel2.innerHTML = ("Hymn: " + inputValue_2);
 	hymnLabel3.innerHTML = ("Hymn: " + inputValue_3);
 	hymnLabel4.innerHTML = ("Hymn: " + inputValue_4);
-	sum.appendChild(hymn1);
-	sum.appendChild(hymnLabel1);
-	sum.appendChild(liturgy1);
-	sum.appendChild(liturgyLabel1);
-	sum.appendChild(hymn2);
-	sum.appendChild(hymnLabel2);
-	sum.appendChild(liturgy2);
-	sum.appendChild(liturgyLabel2);
-	sum.appendChild(hymn3);
-	sum.appendChild(hymnLabel3);
-	sum.appendChild(liturgy3);
-	sum.appendChild(liturgyLabel3);
-	sum.appendChild(liturgy4);
-	sum.appendChild(liturgyLabel4);
-	sum.appendChild(liturgy5);
-	sum.appendChild(liturgyLabel5);
-	sum.appendChild(hymn4);
-	sum.appendChild(hymnLabel4);
+	mid.appendChild(hymn1);
+	mid.appendChild(hymnLabel1);
+	mid.appendChild(liturgy1);
+	mid.appendChild(liturgyLabel1);
+	mid.appendChild(hymn2);
+	mid.appendChild(hymnLabel2);
+	mid.appendChild(liturgy2);
+	mid.appendChild(liturgyLabel2);
+	mid.appendChild(hymn3);
+	mid.appendChild(hymnLabel3);
+	mid.appendChild(liturgy3);
+	mid.appendChild(liturgyLabel3);
+	mid.appendChild(liturgy4);
+	mid.appendChild(liturgyLabel4);
+	mid.appendChild(liturgy5);
+	mid.appendChild(liturgyLabel5);
+	mid.appendChild(hymn4);
+	mid.appendChild(hymnLabel4);
 
 	hymn1.setAttribute('src', audio1);
 	liturgy1.setAttribute('src', liturgy1_src);
@@ -165,23 +167,23 @@ function communion(){
 	hymn4.setAttribute('src', audio4);
 }
 function midweek(){
-	sum.innerHTML="";
+	mid.innerHTML="";
 	hymnLabel1.innerHTML = ("Hymn: " + inputValue_1); 
 	hymnLabel2.innerHTML = ("Hymn: " + inputValue_2);
 	hymnLabel3.innerHTML = ("Hymn: " + inputValue_3);
 	hymnLabel4.innerHTML = ("Hymn: " + inputValue_4);
-	sum.appendChild(hymn1);
-	sum.appendChild(hymnLabel1);
-	sum.appendChild(liturgy1);
-	sum.appendChild(liturgyLabel1);
-	sum.appendChild(hymn2);
-	sum.appendChild(hymnLabel2);
-	sum.appendChild(hymn3);
-	sum.appendChild(hymnLabel3);
-	sum.appendChild(liturgy2);
-	sum.appendChild(liturgyLabel2);
-	sum.appendChild(hymn4);
-	sum.appendChild(hymnLabel4);
+	mid.appendChild(hymn1);
+	mid.appendChild(hymnLabel1);
+	mid.appendChild(liturgy1);
+	mid.appendChild(liturgyLabel1);
+	mid.appendChild(hymn2);
+	mid.appendChild(hymnLabel2);
+	mid.appendChild(hymn3);
+	mid.appendChild(hymnLabel3);
+	mid.appendChild(liturgy2);
+	mid.appendChild(liturgyLabel2);
+	mid.appendChild(hymn4);
+	mid.appendChild(hymnLabel4);
 
 	hymn1.setAttribute('src', audio1);
 	liturgy1.setAttribute('src', liturgy8_src);
